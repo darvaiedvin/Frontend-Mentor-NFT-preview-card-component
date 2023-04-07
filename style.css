@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*font-family: 'Outfit', sans-serif;*/
+
+:root{
+
+--Soft-blue: hsl(215, 52%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+
+--Very-dark-blue: hsl(217, 54%, 11%);
+--Dark-blue: hsl(216, 50%, 16%);
+--Line-blue: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-blue);
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    
+}
+
+.img-whole{
+    position: relative;
+}
+
+.picture{
+    height: 280px;
+    border-radius: 10px;
+}
+
+.overlay{
+    background-color: hsl(178, 100%, 50%, 0.5);
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.eye{
+    position: absolute;
+    top: 41%;
+    left: 41%;
+}
+
+
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.middle{
+    margin: 0px 0 15px 0;
+}
+
+.param{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    margin: 10px 0;
+}
+
+.small-icon{
+    height: fit-content;
+    padding: 0 7px 0 0;
+}
+
+.eth, .days-left{
+    display: flex;
+}
+
+.white{
+    color: var(--White);
+}
+
+.white:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+p{
+    color: var(--Soft-blue);
+    margin: 0;
+}
+
+.cyan{
+    color: var(--Cyan);
+
+}
+
+.creation{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    margin: 10px 0;
+}
+
+.avatar{
+    height: 35px;
+    border: solid 1px white;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+
+hr {
+    border: none;
+    opacity: 1;
+    width: 280px;
+    height: 0.9px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:var(--Line-blue);
+ }
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    color: var(--White);
+ }
+.attribution a { 
+    color: hsl(228, 88%, 68%); }
